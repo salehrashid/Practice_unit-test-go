@@ -8,6 +8,7 @@ import (
 
 func TestAssertion(t *testing.T) {
 	result := go_unit_test.FuncHello("saleh")
+	opAdd := go_unit_test.Add(1)
 
 	/**
 	assert = t.Fail()
@@ -17,4 +18,5 @@ func TestAssertion(t *testing.T) {
 	assert.NotEqual(t, 123, 13, "harusnya beda")
 
 	assert.Equal(t, "Hello saleh", result)
+	assert.Equal(t, opAdd, 2, "harunya 2 dong")
 }
