@@ -1,11 +1,12 @@
 package main
 
 import (
+	"go-unit-test"
 	"testing"
 )
 
 func TestHelloSaleh(t *testing.T) {
-	result := FuncHello("saleh")
+	result := go_unit_test.FuncHello("saleh")
 	if result != "Hello saleh" {
 		/**
 		tidak disarankan menggunakan ini karena ketika gagal
@@ -17,7 +18,7 @@ func TestHelloSaleh(t *testing.T) {
 }
 
 func TestHelloRizky(t *testing.T) {
-	result := FuncHello("rizky")
+	result := go_unit_test.FuncHello("rizky")
 	if result != "Hello rizky" {
 		/**
 		t.Fail(), saat terjadi error maka func test gagal dan
@@ -30,7 +31,7 @@ func TestHelloRizky(t *testing.T) {
 }
 
 func TestHelloUmar(t *testing.T) {
-	result := FuncHello("umar")
+	result := go_unit_test.FuncHello("umar")
 	if result != "Hello umar" {
 		/**
 		t.FailNow(), saat terjadi error maka func test gagal dan
@@ -43,7 +44,7 @@ func TestHelloUmar(t *testing.T) {
 }
 
 func TestHelloAlip(t *testing.T) {
-	result := FuncHello("alip")
+	result := go_unit_test.FuncHello("alip")
 	if result != "Hello alip" {
 		/**
 		t.Error(), saat terjadi error maka func test gagal dan
@@ -57,7 +58,7 @@ func TestHelloAlip(t *testing.T) {
 }
 
 func TestHelloRapip(t *testing.T) {
-	result := FuncHello("rapip")
+	result := go_unit_test.FuncHello("rapip")
 	if result != "Hello rapip" {
 		/**
 		t.Fatal(), saat terjadi error maka func test gagal dan
