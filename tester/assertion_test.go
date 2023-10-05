@@ -8,7 +8,7 @@ import (
 
 func TestAssertion(t *testing.T) {
 	result := go_unit_test.FuncHello("saleh")
-	opAdd := go_unit_test.Add(1)
+	opAdd := go_unit_test.Add(1, 1)
 
 	/**
 	assert = t.Fail()
